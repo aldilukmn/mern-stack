@@ -1,0 +1,21 @@
+.navbar {
+    align-items: center;
+    background-color: burlywood;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    .logo-app {
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        margin: 0;
+    }
+
+    .menu-item {
+        color: white;
+        cursor: pointer;
+        font-size: 18px;
+        margin: 0;
+        text-decoration: underline;
+    }
+}

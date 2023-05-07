@@ -3,20 +3,26 @@ import { Routes, Route } from "react-router-dom";
 import CreateBlog from "../CreateBlog";
 import DetailBlog from "../DetailBlog";
 import Home from "../Home";
+import { Footer, Header } from "../../components";
+import "./mainApp.scss"
 
 const MainApp = () => {
   return (
-    <>
-      <header>Header</header>
-      <main>
+    <div className="main-app-wrapper"> 
+      <div class="header-wrapper">
+        <Header/>
+      </div>
+      <main className="content-wrapper">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/create-blog" element={<CreateBlog />} />
           <Route path="/detail-blog" element={<DetailBlog />} />
         </Routes>
       </main>
-      <footer>Footer</footer>
-    </>
+      <div class="footer-wrapper">
+        <Footer/>
+      </div>
+    </div>
   );
 };
 

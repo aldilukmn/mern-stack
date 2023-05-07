@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Gap = ({ height }) => {
+const Gap = ({ height, width }) => {
   return (
-        <div style={{ height }} />
+        <div style={{ height, width }} />
     )
 }
 
