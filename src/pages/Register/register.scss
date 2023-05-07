@@ -1,0 +1,30 @@
+.main-page {
+    box-sizing: border-box;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    .left {
+        flex: 1;
+        .bg-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    
+    .right {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 30px;
+        width: 460px;
+        .title {
+            color: #2d2d2d;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+}
+
