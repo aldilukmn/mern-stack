@@ -1,16 +1,21 @@
 import React from 'react'
 import "./blogItem.scss"
-import { registerBg } from '../../../assets'
-import { Button } from '../../atoms'
+// import { registerBg } from '../../../assets'
+import { Button, Gap } from '../../atoms'
+import { useNavigate } from 'react-router-dom'
 
-const BlogItem = () => {
+const BlogItem = (props) => {
+  const navigate = useNavigate();
+  const {title, name, body, image, date} = props;
   return (
     <div className='blog-item'>
-        <img className='image-thumb' src={registerBg} alt="post"/>
+        <img className='image-thumb' src={image} alt="post"/>
         <div className='content-detail'>
-          <p className='title'>Title Blog</p>
-          <p className='author'>Author - Date Post</p>
-          <p className='body'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam alias illo sapiente quis amet optio culpa inventore fugiat dolorum eligendi facere reprehenderit obcaecati deleniti dolorem nam, tempora non quia quae consequatur est iusto. Vel officiis dolorem explicabo rem voluptatem sequi?</p>
+          <p className='title'>{title}</p>
+          <p className='author'>{name} - {date}</p>
+          <p className='body'>{body}</p>
+          <Gap height={20}/>
+          <Button title={'View detail'} onClick={() => navigate('/detail-blog')}/>
         </div>
     </div>
   )

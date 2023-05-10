@@ -3,7 +3,7 @@ import "./link.scss"
 
 const Link = ({title, onClick}) => {
   return (
-    <div class="link">
+    <div className="link">
         <a onClick={onClick }>{title}</a>
     </div>
   )

@@ -4,7 +4,7 @@ import './input.scss'
 const Input = ({label, ...rest}) => {
   return (
     <div className='input-wrapper'>
-        <label for={label}>{label}</label>
+        <label htmlFor={label}>{label}</label>
         <input type="text" id={label} {...rest}/>
     </div>
   )

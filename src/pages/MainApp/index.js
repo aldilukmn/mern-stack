@@ -9,17 +9,17 @@ import "./mainApp.scss"
 const MainApp = () => {
   return (
     <div className="main-app-wrapper"> 
-      <div class="header-wrapper">
+      <div className="header-wrapper">
         <Header/>
       </div>
       <main className="content-wrapper">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/create-blog" element={<CreateBlog />} />
-          <Route path="/detail-blog" element={<DetailBlog />} />
+          <Route path="create-blog" element={<CreateBlog />} />
+          <Route path="detail-blog" element={<DetailBlog />} />
         </Routes>
       </main>
-      <div class="footer-wrapper">
+      <div className="footer-wrapper">
         <Footer/>
       </div>
     </div>
