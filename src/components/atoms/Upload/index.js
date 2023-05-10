@@ -2,11 +2,11 @@ import React from 'react'
 import "./upload.scss"
 import {registerBg} from "../../../assets"
 
-const Upload = () => {
+const Upload = ({image, ...rest}) => {
   return (
     <div className='upload'>
-        <img src={registerBg} alt="preview" className='preview'/>
-        <input type="file"/>
+      {image && <img src={image} alt="preview" className='preview'/>}
+        <input type="file" {...rest}/>
     </div>
   )
 }
