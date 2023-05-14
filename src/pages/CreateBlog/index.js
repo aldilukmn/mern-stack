@@ -17,10 +17,10 @@ const CreateBlog = () => {
     const data = new FormData();
     data.append('title', title);
     data.append('body', body);
-    data.append('image', image)
+    data.append('image', image);
 
-    axios.post('http://localhost:3000/v1/blog/create-blog', data, {
-      headers: {
+    axios.post('http://localhost:3001/v1/blog/create-blog', data, {
+      headers: {  
         'content-type': 'multipart/form-data'
       }
     })

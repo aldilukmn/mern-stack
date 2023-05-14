@@ -35,7 +35,7 @@ const Home = () => {
         {dataBlog.map(blog => {
           return <BlogItem 
                   key={blog._id} 
-                  image={`http://localhost:3000/${blog.image}`}
+                  image={`http://localhost:3001/${blog.image}`}
                   title={blog.title}
                   body={blog.body}
                   name={blog.author.name}

@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const setDataBlog = (page) => (dispatch) => {
-    const url = `http://localhost:3000/v1/blog/posts?page=${page}&perPage=4`;
+    const url = `http://localhost:3001/v1/blog/posts?page=${page}&perPage=4`;
     axios.get(url)  
     .then(result => {
       const resAPI = result.data;
